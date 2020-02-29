@@ -1,8 +1,8 @@
-# rollup-starter-app
+# rollup-sass-tailwind-starter-kit
 
-This repo contains a bare-bones example of how to create an application using Rollup, including importing a module from `node_modules` and converting it from CommonJS.
+Based on rollup-starter-app, this repo contains a bare-bones example of a Rollup build that merges custom .scss and Tailwind base.css into a `bundle.css` for distribution.
 
-*See also https://github.com/rollup/rollup-starter-lib*
+*See also https://github.com/rollup/rollup-starter-app*
 
 
 ## Getting started
@@ -10,21 +10,12 @@ This repo contains a bare-bones example of how to create an application using Ro
 Clone this repository and install its dependencies:
 
 ```bash
-git clone https://github.com/rollup/rollup-starter-app
-cd rollup-starter-app
-npm install
-
-# or
-npx degit "rollup/rollup-starter-app" my-app
-cd my-app
+git clone https://github.com/timburgess/rollup-sass-tailwind-starter-kit
+cd rollup-sass-tailwind-starter-kit
 npm install
 ```
 
-The `public/index.html` file contains a `<script src='bundle.js'>` tag, which means we need to create `public/bundle.js`. The `rollup.config.js` file tells Rollup how to create this bundle, starting with `src/main.js` and including all its dependencies, including [date-fns](https://date-fns.org).
-
 `npm run build` builds the application to `public/bundle.js`, along with a sourcemap file for debugging.
-
-`npm start` launches a server, using [serve](https://github.com/zeit/serve). Navigate to [localhost:3000](http://localhost:3000).
 
 `npm run watch` will continually rebuild the application as your source files change.
 
@@ -33,5 +24,3 @@ The `public/index.html` file contains a `<script src='bundle.js'>` tag, which me
 ## License
 
 [MIT](LICENSE).
-# rollup-sass-tailwind-starter-kit
-# rollup-sass-tailwind-starter-kit
